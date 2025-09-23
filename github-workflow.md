@@ -40,17 +40,3 @@ flowchart TD
     style N fill:#fce4ec
 ```
 
-## Key Features of This Workflow
-
-- **Iterative Development**: Supports multiple commit-push cycles during development
-- **Code Review**: Includes review process before merging
-- **Branch Management**: Proper branch creation and cleanup
-- **Continuous Integration**: Each push can trigger automated tests and checks
-
-## Best Practices
-
-1. **Meaningful Commits**: Make small, focused commits with descriptive messages
-2. **Regular Pushes**: Push changes frequently to backup work and enable collaboration
-3. **Pull Request Quality**: Include clear descriptions and context in pull requests
-4. **Code Review**: Engage constructively in the review process
-5. **Branch Hygiene**: Delete feature branches after successful merge
