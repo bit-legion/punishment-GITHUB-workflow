@@ -25,23 +25,17 @@ flowchart TD
     B --> E[Editing]
     B --> S[Submitting]
 
-    %% Researching
-    R --> R1[AI used before research]
-    R --> R2[Insufficient research<br/>Less time spent]
-    R --> R3[Content generated from scratch<br/>using prompts]
-    R --> R4[Only relying on guideline links<br/>for research]
+    %% Researching - listicle style
+    R --> RList["1. AI used before research<br/>2. Insufficient research - less time spent<br/>3. Content generated from scratch using prompts<br/>4. Only relying on guideline links for research"]
 
-    %% Writing
-    W --> W1[Writing independently<br/>without AI]
-    W --> W2[Writing with help from GPT]
-    W --> W3[Writing directly in Surfer]
+    %% Writing - listicle style
+    W --> WList["1. Writing independently without AI<br/>2. Writing with help from GPT<br/>3. Writing directly in Surfer"]
 
-    %% Editing
-    E --> E1[Links embedded from GPT]
-    E --> E2[NLPs integrated with GPT]
-    E --> E3[Auto-optimized using Surfer]
+    %% Editing - listicle style
+    E --> EList["1. Links embedded from GPT<br/>2. NLPs integrated with GPT<br/>3. Auto-optimized using Surfer"]
 
     %% Submitting
     S --> F[Submit]
+
 ```
 
