@@ -18,25 +18,30 @@ Our development process follows these key steps:
 
 ```mermaid
 flowchart TD
-    A[Start: Main Branch] --> B[Create Feature Branch]
-    B --> C[Push Branch to Remote]
-    C --> D[Make Code Changes]
-    D --> E[Commit Changes]
-    E --> F[Push Changes]
-    F --> G{More Changes Needed?}
-    G -->|Yes| D
-    G -->|No| H[Create Pull Request]
-    H --> I[Code Review]
-    I --> J{Review Approved?}
-    J -->|No - Changes Requested| K[Address Review Comments]
-    K --> D
-    J -->|Yes| L[Merge to Main Branch]
-    L --> M[Delete Feature Branch]
-    M --> N[End]
+    B[Monitoring the Writer's Activity]
 
-    style A fill:#e1f5fe
-    style H fill:#fff3e0
-    style L fill:#e8f5e8
-    style N fill:#fce4ec
+    B --> R[Researching]
+    B --> W[Writing]
+    B --> E[Editing]
+    B --> S[Submitting]
+
+    %% Researching
+    R --> R1[AI used before research]
+    R --> R2[Insufficient research<br/>Less time spent]
+    R --> R3[Content generated from scratch<br/>using prompts]
+    R --> R4[Only relying on guideline links<br/>for research]
+
+    %% Writing
+    W --> W1[Writing independently<br/>without AI]
+    W --> W2[Writing with help from GPT]
+    W --> W3[Writing directly in Surfer]
+
+    %% Editing
+    E --> E1[Links embedded from GPT]
+    E --> E2[NLPs integrated with GPT]
+    E --> E3[Auto-optimized using Surfer]
+
+    %% Submitting
+    S --> F[Submit]
 ```
 
